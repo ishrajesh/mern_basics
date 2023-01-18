@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node backend/server.js",
-    "server": "nodemon backend/seerver.js"
+    "server": "nodemon backend/server.js"
   },
   "author": "",
   "license": "ISC",
