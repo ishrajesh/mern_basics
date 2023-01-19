@@ -3,6 +3,7 @@
 // @access  private
 
 const getGoals = (req,res) => { 
+    
     res.status(200).json({msg:'Get goals'})
 }
 
@@ -11,6 +12,11 @@ const getGoals = (req,res) => {
 // @access  private
 
 const setGoal = (req,res) => { 
+    if(!req.body.text){
+        res.status(400)
+        throw new Error('Please add a text field');
+
+    }
     res.status(200).json({msg:'Create goal'})
 }
 
